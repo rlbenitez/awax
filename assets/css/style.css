@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+}
+header {
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+.header {
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 100px;
+}
+.logoimg {
+    width: 80px;
+    height: 80px;
+    background-color: #00FF7F;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu ul, 
+.menu li {
+    list-style:none;
+}
+.menu ul {
+    display: flex;
+}
+.menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+.menu li a:hover,
+.menu .active a {
+    border-bottom: 5px solid #00FF7F;
+}
+.banner{
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block ;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+.banner .sliderarea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.banner h1 span {
+    color: #00FF7F;
+}
+
+.banner h2 span {
+    color: white;    
+}
