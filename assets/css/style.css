@@ -6,6 +6,7 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 13px;
+    overflow-x: hidden;
 }
 header {
     height: 100px;
@@ -142,4 +143,44 @@ header {
 
 .banner .pointer.active {
     background-color: #00FF7F;
+}
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section-title, 
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 1000px;
+}
+.default .section-title {
+    font-size: 20px;
+}
+.default .section-desc {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    margin: auto;
+    max-width: 1140px;
+    min-height: 100px;
+    background-color: #ccc;
+}
+.default.light{
+    background-color: #fff;
+}
+.default.light .section-title, 
+.default.light .section-body {
+    color: #000;
+}
+.default.dark {
+    background-color: #000;
+}
+.default.dark .section-title,
+.default.dark .section-body {
+    color: #fff;
 }
