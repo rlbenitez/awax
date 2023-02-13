@@ -28,7 +28,6 @@ header {
     height: 80px;
     background-color: #00FF7F;
 }
-
 .menu {
     flex: 1;
     display: flex;
@@ -57,60 +56,8 @@ header {
 .menu .active a {
     border-bottom: 5px solid #00FF7F;
 }
-.banner{
-    height: calc(100vh - 100px);
-    background-color: #333;
-    background-image: url('../images/bg_space.jpg');
-    background-size: cover;
-    background-position: bottom;
-    overflow: hidden;
-}
-
-.banner .sliders {
-    width: 1000vw;
-    height: 100%;
-}
-
-.banner .slide {
-    width: 100vw;
-    height: 100%;
-    display: inline-block ;
-    background-color: rgba(0, 0, 0, 0.40);
-}
-
-.banner .sliderarea {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    color: #fff;
-    justify-content: center;
-
-}
-
-.banner h1 {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 40px;
-}
-
-.banner h2 {
-    text-transform: uppercase;
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 15px;
-
-}
-.banner h1 span {
-    color: #00FF7F;
-}
-
-.banner h2 span {
-    color: white;    
-}
-
-.banner a {
-    display: block;
+.button {
+    display: inline-block;
     background-color: purple;
     color: #fff;
     text-transform: uppercase;
@@ -121,7 +68,49 @@ header {
     font-weight: 700;
     border-radius: 20px;
 }
-
+.banner{
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('../images/bg_space.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block ;
+    background-color: rgba(0, 0, 0, 0.40);
+}
+.banner .sliderarea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+}
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+}
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.banner h1 span {
+    color: #00FF7F;
+}
+.banner h2 span {
+    color: white;    
+}
 .banner .sliders-pointers {
     width: 100vw;
     height: 20px;
@@ -131,7 +120,6 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 .banner .pointer {
     width: 15px;
     height: 15px;
@@ -140,19 +128,19 @@ header {
     margin-left: 5px;
     margin-right: 5px;
 }
-
 .banner .pointer.active {
     background-color: #00FF7F;
 }
 .default {
     padding-top: 50px;
     padding-bottom: 50px;
+    min-height: 100px;
 }
 .default .section-title, 
 .default .section-desc {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 1000px;
+    font-weight: 600px;
 }
 .default .section-title {
     font-size: 20px;
@@ -163,12 +151,9 @@ header {
     margin-top: 10px;
     margin-bottom: 40px;
 }
-
 .default .section-body {
-    margin: auto;
     max-width: 1140px;
-    min-height: 100px;
-    background-color: #ccc;
+    margin: auto;
 }
 .default.light{
     background-color: #fff;
@@ -183,4 +168,37 @@ header {
 .default.dark .section-title,
 .default.dark .section-body {
     color: #fff;
+}
+
+
+
+/* Área especifica
+*/
+
+.section-aboutus {
+    display:flex;
+}
+.section-aboutus--left {
+    flex:1;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: grey;
+}
+.section-aboutus--right {
+    width: 550px;
+    text-align: center;
+}
+.section-aboutus--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}    
+
+
+.section-services {
+    display: flex;
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
 }
